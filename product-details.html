@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/fav.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <!-- google fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Custom Css -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/media.css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <title></title>
+</head>
+
+<body>
+  <section class="top-header">
+    <div class="container">
+      <div class="row">
+        <p>
+          <img src="images/pencilbaner-img.svg" />Free home delivery minimum order $49.99
+        </p>
+      </div>
+    </div>
+  </section>
+  <header>
+    <nav class="navbar navbar-expand-lg position-relative customnav">
+      <div class="container">
+        <!-- Left: Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" srcset="images/logo@2x.png 2x,images/logo@3x.png 3x" alt="img" class="logo-img" />
+        </a>
+        <!-- Right: Cart + Toggler for Mobile -->
+        <div class="d-flex align-items-center ms-auto order-lg-2">
+          <ul class="rightside-menu d-flex">
+            <li>
+              <a href="login.html" class="text-dark position-relative"><i class="bi bi-person"></i></a>
+            </li>
+            <li>
+              <a href="#" class="text-dark position-relative"><i class="bi bi-search search-toggle"></i></a>
+            </li>
+            <li>
+              <a href="wishlist.html" class="text-dark position-relative"><i class="bi bi-heart"></i>
+                <span
+                class="wishlist-count-badge badge bg-danger position-absolute top-0 start-100 translate-middle">0</span>
+              </a>
+            </li>
+            <li>
+              <a href="cart.html" class="text-dark position-relative">
+                <i class="bi bi-cart"></i>
+                <span
+                        class="position-absolute top-0 start-100 translate-middle 
+                        badge rounded-pill bg-danger" id="cart-count"
+                        >0</span>
+              </a>
+            </li>
+          </ul>
+          <!-- Offcanvas toggle button visible only on mobile -->
+          <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span><i class="bi bi-list" style="font-size: 1.5rem;"></i></span>
+          </button>
+        </div>
+        <!-- Placeholder container for menu (empty) -->
+        <div class="collapse navbar-collapse justify-content-center order-lg-1 d-lg-flex" id="mainNavbar"></div>
+      </div>
+    </nav>
+    <!-- Offcanvas menu for mobile -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"> <img src="images/logo.png"
+            srcset="images/logo@2x.png 2x,images/logo@3x.png 3x" alt="img" class="logo-img" /></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <!-- Placeholder for mobile menu -->
+        <div id="offcanvasMenuContainer"></div>
+      </div>
+    </div>
+    <!-- Single menu markup only once -->
+    <ul id="singleMenu" class="navbar-nav mb-2 mb-lg-0 navbar-center" style="list-style: none; padding-left: 0;">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+      <li class="nav-item"><a class="nav-link active" href="listing.html">Menu</a></li>
+      <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+      <li class="nav-item"><a class="nav-link" href="contactus.html">Contact us</a></li>
+    </ul>
+  </header>
+  <div class="search-bar-container d-none mt-2">
+      
+
+    <form id="search-form ">
+       <div style="position: relative;">
+          <input class="form-control form-control-lg search-input" type="text" id="search-input" placeholder="Search product by name..." autocomplete="off" />
+          <ul id="autocomplete-list" class="autocomplete-items"></ul>
+        </div>
+     </form>
+     <p id="search-error" style="color:red; display:none;">No matching product found</p>
+ </div>
+  <div class="search-bar-container d-none mt-2">
+    <form class="d-flex">
+      <div class="input-group">
+        <input class="form-control form-control-lg" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn theme-search px-4" type="submit">
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+    </form>
+  </div>
+  <!--- common banner section start---->
+  <section class="cmn-bnr">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Menu</h3>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="listing.html">Menu</a></li>
+              <li class="breadcrumb-item active" aria-current="page"> Menu Item</li>
+            </ol>
+          </nav>
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+
+  </section>
+
+  <!--- blog section start---->
+
+  <section class="blog-section blog-pagesec">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <!--product-slider-->
+
+          <div class="pro-slider">
+
+            <!-- Main Carousel -->
+            <div id="main-carousel" class="owl-carousel owl-theme">
+              <div class="item"><img src="images/pro-del.png" srcset="images/pro-del@2x.png 2x,images/pro-del@3x.png 3x"
+                  alt="img" /></div>
+              <div class="item"><img src="images/pro-del.png" srcset="images/pro-del@2x.png 2x,images/pro-del@3x.png 3x"
+                  alt="img" /></div>
+              <div class="item"><img src="images/pro-del.png" srcset="images/pro-del@2x.png 2x,images/pro-del@3x.png 3x"
+                  alt="img" /></div>
+              <div class="item"><img src="images/pro-del.png" srcset="images/pro-del@2x.png 2x,images/pro-del@3x.png 3x"
+                  alt="img" /></div>
+
+              <!-- Add more items as needed -->
+            </div>
+
+            <!-- Thumbnail Carousel -->
+            <div id="thumbnail-carousel" class="owl-carousel owl-theme">
+              <div class="item"><img src="images/thumb.png" srcset="images/thumb@2x.png 2x,images/thumb@3x.png 3x"
+                  alt="Thumbnail 1"></div>
+              <div class="item"><img src="images/thumb.png" srcset="images/thumb@2x.png 2x,images/thumb@3x.png 3x"
+                  alt="Thumbnail 2"></div>
+              <div class="item"><img src="images/thumb.png" srcset="images/thumb@2x.png 2x,images/thumb@3x.png 3x"
+                  alt="Thumbnail 3"></div>
+              <div class="item"><img src="images/thumb.png" srcset="images/thumb@2x.png 2x,images/thumb@3x.png 3x"
+                  alt="Thumbnail 4"></div>
+              <!-- Add more thumbnails as needed -->
+            </div>
+
+          </div>
+
+
+
+
+        </div>
+
+        <div class="col-md-7">
+          <div class="del-cont">
+            <div class="title-dv font-w-500">
+              <h3>
+                Chicken ala kiev
+              </h3>
+            </div>
+
+            <div class="star-rating">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+
+            <p>Chicken a la Kiev is a dish where a chicken breast is pounded thin, stuffed with flavored butter,
+              breaded, and then fried or baked. When the dish is cut, the butter melts out, creating a rich and
+              flavorful experience. The stuffed breast is then breaded and fried or baked until golden brown and cooked
+              through. The dish is known for its rich, buttery flavor, often with a hint of garlic and herbs from the
+              butter filling. </p>
+
+            <div class="quantity">
+
+              <div class="input-group" style="max-width: 200px;">
+                <button class="btn " type="button" id="button-decrement">-</button>
+                <input type="number" class="form-control text-center" value="1" min="1" id="quantity-input">
+                <button class="btn " type="button" id="button-increment">+</button>
+              </div>
+
+
+            </div>
+
+            <div class="price-dv">$19.00</div>
+            <div class="clearfix"></div>
+
+            <div class="order-btn"> <a href="#" class="theme-btn ">ORDER NOW </a></div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="col-md-12">
+
+          <div class="tab-del">
+
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                  type="button" role="tab" aria-controls="nav-home" aria-selected="true">Ingredients </button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                  type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Reviews</button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                tabindex="0">
+                <div class="tab-c">
+
+                  <h5>Key Components:</h5>
+                  <ul>
+                    <li>Chicken Breast – Boneless and skinless, pounded thin.</li>
+                    <li>Garlic Herb Butter (Compound Butter) – Made with butter, garlic, parsley, salt, and sometimes
+                      lemon juice or dill.</li>
+                    <li>Coating – Typically involves a flour dredge, egg wash, and breadcrumbs.</li>
+                    <li>Cooking Method – Traditionally deep-fried, though it can be baked as a lighter option.</li>
+                  </ul>
+                  <h5>Key Components:</h5>
+                  <ul>
+                    <li>Crispy exterior</li>
+                    <li>Juicy chicken</li>
+                    <li>Melted, aromatic butter center</li>
+                  </ul>
+                </div>
+
+
+              </div>
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                tabindex="0">
+
+                <div class="testimonial-card p-3 position-relative mx-3">
+
+                  <div class="row align-items-center">
+                    <div class="col-md-2 text-center">
+                      <img src="images/client1.png" srcset="images/client1@2x.png 2x,images/client1@3x.png 3x"
+                        alt="img">
+
+
+                    </div>
+                    <div class="col-md-10">
+                      <h5 class="mb-1">Sarah Johnson</h5>
+                      <div class="star-rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                      <p class="mb-0">“My favorite restaurant! Always good food and good service! Can't beat the price!
+                        Can accommodate large groups! The staff is the best in town and why we keep coming back. Highly
+                        recommend this restaurant!”</p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="testimonial-card p-3 position-relative mx-3">
+
+                  <div class="row align-items-center">
+                    <div class="col-md-2 text-center">
+                      <img src="images/client2.png" srcset="images/client2@2x.png 2x,images/client2@3x.png 3x"
+                        alt="img">
+
+
+                    </div>
+                    <div class="col-md-10">
+                      <h5 class="mb-1">Henry</h5>
+                      <div class="star-rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                      <p class="mb-0">“Wow! Just stopped here for a cup of coffee and I was extremely surprised with the
+                        environment! Very good place, good food and good coffee!"</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </section>
+
+
+
+
+
+  <section class="insta-img">
+    <div class="title-dv mid-align">
+       <h3>
+          <span>Follow Us </span> Instragram
+       </h3>
+    </div>
+    <ul>
+       <li>
+          <img src="images/insta1.png" srcset="images/insta1@2x.png 2x,images/insta1@3x.png 3x" alt="img"> 
+          <a href="#">
+             <div class="overlay-insta"><i class="bi bi-instagram"></i></div>
+          </a>
+       </li>
+       <li>
+          <img src="images/insta2.png" srcset="images/insta2@2x.png 2x,images/insta2@3x.png 3x" alt="img"> 
+          <a href="#">
+             <div class="overlay-insta"><i class="bi bi-instagram"></i></div>
+          </a>
+       </li>
+       <li>
+          <img src="images/insta3.png" srcset="images/insta3@2x.png 2x,images/insta3@3x.png 3x" alt="img"> 
+          <a href="#">
+             <div class="overlay-insta"><i class="bi bi-instagram"></i></div>
+          </a>
+       </li>
+       <li>
+          <img src="images/insta4.png" srcset="images/insta4@2x.png 2x,images/insta4@3x.png 3x" alt="img"> 
+          <a href="#">
+             <div class="overlay-insta"><i class="bi bi-instagram"></i></div>
+          </a>
+       </li>
+       <li>
+          <img src="images/insta5.png" srcset="images/insta5@2x.png 2x,images/insta5@3x.png 3x" alt="img"> 
+          <a href="#">
+             <div class="overlay-insta"><i class="bi bi-instagram"></i></div>
+          </a>
+       </li>
+    </ul>
+    <div class="clearfix"></div>
+ </section>
+ <footer>
+    <div class="container">
+       <div class="row">
+          <div class="col-md-4" >
+             <div class="logodiv">
+                <img src="images/logo.png" srcset="images/logo@2x.png 2x,images/logo@3x.png 3x" alt="img">
+             </div>
+             <div class="playstore">
+               <a href="#"> <img src="images/appleplay.svg"  alt="img"></a>
+               <a href="#"> <img src="images/googleplay.svg"  alt="img"></a>
+             </div>
+          </div>
+          <div class="col-md-2" >
+             <div class="title-dv ">
+                <h3>
+                   Menus
+                </h3>
+             </div>
+             <ul class="catamenu">
+                <li><a href="listing.html"><i class="bi bi-arrow-right"></i>Pizzas</a></li>
+                <li><a href="listing.html"><i class="bi bi-arrow-right"></i>Combo</a></li>
+                <li><a href="listing.html"><i class="bi bi-arrow-right"></i>Starters</a></li>
+                <li><a href="listing.html"><i class="bi bi-arrow-right"></i>Main course</a></li>
+                <li><a href="listing.html"><i class="bi bi-arrow-right"></i>Drinks (Beverages) </a></li>
+             </ul>
+          </div>
+          <div class="col-md-3" >
+             <div class="title-dv ">
+                <h3>
+                   Opening Hours
+                </h3>
+             </div>
+             <ul class="iconmenu">
+                <li><i class="bi bi-clock"></i> <span>Monday – Friday: 9am – 10pmSaturday – Sunday: 10am – 11pm</span></li>
+             </ul>
+             <ul class="social-links">
+                <li><a href="#"><i class="bi bi-facebook square-icon"></i></a></li>
+                <li><a href="#"><i class="bi bi-instagram  square-icon"></i></a></li>
+                <li><a href="#"><i class="bi bi-youtube  square-icon"></i></a></li>
+             </ul>
+          </div>
+          <div class="col-md-3" >
+             <div class="title-dv ">
+                <h3>
+                   Contact Info
+                </h3>
+             </div>
+             <ul class="iconmenu">
+                <li><i class="bi bi-geo-alt"></i> <span>128 6th Ave,New York, 
+                   NY 10015 United States, 
+                   Dcca-1212</span>
+                </li>
+                <li><i class="bi bi-telephone"></i> <span><a href="tel:91-7262562562">+91 - 7262562562</a></span></li>
+                <li><i class="bi bi-envelope"></i> <span><a href="mailto:info@goodfood.com">info@goodfood.com</a></span></li>
+             </ul>
+          </div>
+       </div>
+       <div class="col-md-12">
+          <p class="copyright">Copyright © Good Food 2025 All rights reserved </p>
+       </div>
+    </div>
+ </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
+    integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
+    crossorigin="anonymous"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/script.js"></script>
+<script>
+  $(document).ready(function () {
+    $('#main-carousel, #thumbnail-carousel').owlCarousel({
+      items: 1,
+      margin: 10,
+      loop: true,
+      nav: true,
+      dots: false
+    });
+  });
+</script>
+<script src="js/product-details.js"></script>
+<script>
+  updateWishlistCount();
+</script>
+</body>
+
+</html>

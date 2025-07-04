@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <!-- Favicon -->
+      <link rel="shortcut icon" href="images/fav.png" type="image/x-icon" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+      <!-- google fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+      <!-- Custom Css -->
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/media.css" />
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <title></title>
+   </head>
+   <body>
+      <section class="top-header">
+         <div class="container">
+            <div class="row">
+               <p>
+                  <img src="images/pencilbaner-img.svg" />Free home delivery minimum order $49.99
+               </p>
+            </div>
+         </div>
+      </section>
+      <header>
+         <nav class="navbar navbar-expand-lg position-relative customnav">
+            <div class="container">
+               <!-- Left: Logo -->
+               <a class="navbar-brand" href="index.html">
+               <img
+                  src="images/logo.png"
+                  srcset="images/logo@2x.png 2x,images/logo@3x.png 3x"
+                  alt="img"
+                  class="logo-img"
+                  />
+               </a>
+               <!-- Right: Cart + Toggler for Mobile -->
+               <div class="d-flex align-items-center ms-auto order-lg-2">
+                  <ul class="rightside-menu d-flex">
+                     <li>
+                        <a href="login.html" class="text-dark position-relative"><i class="bi bi-person"></i></a>
+                     </li>
+                     <li>
+                        <a href="#" class="text-dark position-relative"><i class="bi bi-search search-toggle"></i></a>
+                     </li>
+                     <li>
+                        <a href="wishlist.html" class="text-dark position-relative"><i class="bi bi-heart"></i>
+                           <span class="wishlist-count-badge badge bg-danger position-absolute top-0 start-100 translate-middle">0</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="cart.html" class="text-dark position-relative">
+                        <i class="bi bi-cart"></i>
+                        <span
+                        class="position-absolute top-0 start-100 translate-middle 
+                        badge rounded-pill bg-danger" id="cart-count"
+                        >0</span>
+                        </a>
+                     </li>
+                  </ul>
+                  <!-- Offcanvas toggle button visible only on mobile -->
+                  <button
+                     class="navbar-toggler d-lg-none"
+                     type="button"
+                     data-bs-toggle="offcanvas"
+                     data-bs-target="#offcanvasNavbar"
+                     aria-controls="offcanvasNavbar"
+                     aria-label="Toggle navigation"
+                     >
+                  <span ><i class="bi bi-list" style="font-size: 1.5rem;"></i></span>
+                  </button>
+               </div>
+               <!-- Placeholder container for menu (empty) -->
+               <div
+                  class="collapse navbar-collapse justify-content-center order-lg-1 d-lg-flex"
+                  id="mainNavbar"
+                  ></div>
+            </div>
+         </nav>
+         <!-- Offcanvas menu for mobile -->
+         <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+            >
+            <div class="offcanvas-header">
+               <h5 class="offcanvas-title" id="offcanvasNavbarLabel"> <img
+                  src="images/logo.png"
+                  srcset="images/logo@2x.png 2x,images/logo@3x.png 3x"
+                  alt="img"
+                  class="logo-img"
+                  /></h5>
+               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+               <!-- Placeholder for mobile menu -->
+               <div id="offcanvasMenuContainer"></div>
+            </div>
+         </div>
+         <!-- Single menu markup only once -->
+         <ul
+            id="singleMenu"
+            class="navbar-nav mb-2 mb-lg-0 navbar-center"
+            style="list-style: none; padding-left: 0;"
+            >
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="listing.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contactus.html">Contact us</a></li>
+         </ul>
+      </header>
+      <div class="search-bar-container d-none mt-2">
+      
+
+         <form id="search-form ">
+            <div style="position: relative;">
+               <input class="form-control form-control-lg search-input" type="text" id="search-input" placeholder="Search product by name..." autocomplete="off" />
+               <ul id="autocomplete-list" class="autocomplete-items"></ul>
+             </div>
+          </form>
+          <p id="search-error" style="color:red; display:none;">No matching product found</p>
+      </div>
+      <!--- common banner section start---->
+      <section class="cmn-bnr">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <h3>Checkout</h3>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+  </ol>
+</nav>
+
+               </div>
+
+
+            </div>
+
+
+         </div>
+
+
+
+      </section>
+
+   <!--- checkout section start---->
+   <section class="checkout-sec">
+     <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="box-border">
+
+<div class="title-dv">
+            <h3>
+             Shipping Information
+            </h3>
+         </div>
+         <form id="checkout-form">
+            <div class="form-dv">
+              <!-- Contact Info -->
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <label>First Name <span>*</span></label>
+                  <input type="text" class="form-control" id="firstName" name="firstName">
+                </div>
+                <div class="col-md-6 form-group">
+                  <label>Last Name <span>*</span></label>
+                  <input type="text" class="form-control" id="lastName" name="lastName">
+                </div>
+                <div class="col-md-6 form-group">
+                  <label>Your Phone <span>*</span></label>
+                  <input type="tel" class="form-control" id="phone" name="phone">
+                </div>
+                <div class="col-md-6 form-group">
+                  <label>Your Email <span>*</span></label>
+                  <input type="email" class="form-control" id="email" name="email">
+                </div>
+                <div class="col-md-6 form-group">
+                  <label>Address <span>*</span></label>
+                  <input type="text" class="form-control" id="address" name="address">
+                </div>
+                <div class="col-md-6 form-group">
+                  <label>Country <span>*</span></label>
+                  <select class="form-control" id="country" name="country">
+                    <option value="">Select</option>
+                    <option>India</option>
+                    <option>USA</option>
+                    <option>Canada</option>
+                  </select>
+                </div>
+                <div class="col-md-6 form-group">
+                  <label>State <span>*</span></label>
+                  <select class="form-control" id="state" name="state">
+                    <option value="">Select</option>
+                    <option>M.P</option>
+                    <option>U.P</option>
+                    <option>W.B</option>
+                  </select>
+                </div>
+                <div class="col-md-6 form-group">
+                  <label>Pin code <span>*</span></label>
+                  <input type="tel" class="form-control" id="pincode" name="pincode">
+                </div>
+              </div>
+          
+              <!-- Payment Toggle -->
+              <div class="title-dv">
+                <h3>Payment Method</h3>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-check mb-2">
+                    <input class="form-check-input" type="radio" name="paymentMethod" id="creditCardRadio" value="card" checked>
+                    <label class="form-check-label" for="creditCardRadio">Credit / Debit</label>
+                  </div>
+                
+          
+                  <!-- Card Fields -->
+                  <div id="card-section">
+                     <div class="form-group">
+                       <label for="cardNumber">Card Number <span>*</span></label>
+                       <input type="tel" class="form-control" id="cardNumber" name="cardNumber" maxlength="16">
+                     </div>
+                   
+                     <div class="form-group">
+                       <label for="cardHolder">Card Holder Name <span>*</span></label>
+                       <input type="text" class="form-control" id="cardHolder" name="cardHolder">
+                     </div>
+                   
+                     <div class="row">
+                        <div class="col-md-8">
+                           <div class="form-group">
+                             <label for="expDate">Expiration Date <span>*</span></label>
+                             <input
+                               type="text"
+                               class="form-control"
+                               id="expDate"
+                               name="expDate"
+                               placeholder="MM/YY"
+                               maxlength="5"
+                               pattern="^(0[1-9]|1[0-2])\/\d{2}$"
+                             >
+                           </div>
+                         </div>
+                   
+                       <div class="col-md-4">
+                         <div class="form-group">
+                           <label for="cvv">CVV <span>*</span></label>
+                           <input type="text" class="form-control" id="cvv" name="cvv" maxlength="3">
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                   
+          </div>
+                  <!-- UPI Field -->
+                  <div class="col-md-6">
+                  <div class="form-check mb-2">
+                     <input class="form-check-input" type="radio" name="paymentMethod" id="upiRadio" value="upi">
+                     <label class="form-check-label" for="upiRadio">UPI</label>
+                   </div>
+                  <div id="upi-section">
+                    <div class="form-group">
+                      <label>UPI ID <span>*</span></label>
+                      <input type="text" class="form-control" id="upiId">
+                    </div>
+                    <img src="images/upi.svg" alt="UPI QR" style="width: 150px;">
+                  </div>
+          </div>
+          <div class="col-md-12">
+                  <button type="submit" class="theme-btn mt-3">Place Order</button>
+                </div>
+              </div>
+            </div>
+          </form>
+          
+        </div>
+    </div>
+    
+<div class="col-lg-4">
+  
+       <div class="box-border">
+
+<div class="title-dv">
+            <h3>
+            Price Details
+            </h3>
+         </div>
+<div class="flx-dv">
+<img src="images/thumb.png" srcset="images/thumb@2x.png 2x,images/thumb@3x.png 3x" alt="Thumbnail 1">
+ <div class="prodes">  Chicken ala kiev
+
+<span>dish made of chicken fillet pounded and rolled around cold butter then coated with egg and bread crumbs, and either fried or baked.&nbsp;</span>
+</div>
+ </div>
+ <table class="table">
+            <tbody><tr>
+               <td>Sub Total</td>
+                <td>$16.00</td>
+            </tr>
+            <tr>
+  <td>Taxes and Charges</td>
+     <td>$00.00</td>
+            </tr>
+   <tr>
+               <td><b>Grand Total</b></td>
+                <td><b>$16.00</b></td>
+            </tr>
+
+         </tbody></table>
+       </div>
+
+
+</div>
+
+
+        </div>
+
+
+
+
+
+</div>
+</section>
+
+
+
+
+
+         
+      <section class="insta-img">
+         <div class="title-dv mid-align">
+            <h3>
+               <span>Follow Us </span> Instragram
+            </h3>
+         </div>
+         <ul>
+            <li>
+               <img src="images/insta1.png" srcset="images/insta1@2x.png 2x,images/insta1@3x.png 3x" alt="img"> 
+               <a href="#">
+                  <div class="overlay-insta"><i class="bi bi-instagram"></i></div>
+               </a>
+            </li>
+            <li>
+               <img src="images/insta2.png" srcset="images/insta2@2x.png 2x,images/insta2@3x.png 3x" alt="img"> 
+               <a href="#">
+                  <div class="overlay-insta"><i class="bi bi-instagram"></i></div>
+               </a>
+            </li>
+            <li>
+               <img src="images/insta3.png" srcset="images/insta3@2x.png 2x,images/insta3@3x.png 3x" alt="img"> 
+               <a href="#">
+                  <div class="overlay-insta"><i class="bi bi-instagram"></i></div>
+               </a>
+            </li>
+            <li>
+               <img src="images/insta4.png" srcset="images/insta4@2x.png 2x,images/insta4@3x.png 3x" alt="img"> 
+               <a href="#">
+                  <div class="overlay-insta"><i class="bi bi-instagram"></i></div>
+               </a>
+            </li>
+            <li>
+               <img src="images/insta5.png" srcset="images/insta5@2x.png 2x,images/insta5@3x.png 3x" alt="img"> 
+               <a href="#">
+                  <div class="overlay-insta"><i class="bi bi-instagram"></i></div>
+               </a>
+            </li>
+         </ul>
+         <div class="clearfix"></div>
+      </section>
+      <footer>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-4" >
+                  <div class="logodiv">
+                     <img src="images/logo.png" srcset="images/logo@2x.png 2x,images/logo@3x.png 3x" alt="img">
+                  </div>
+                  <div class="playstore">
+                    <a href="#"> <img src="images/appleplay.svg"  alt="img"></a>
+                    <a href="#"> <img src="images/googleplay.svg"  alt="img"></a>
+                  </div>
+               </div>
+               <div class="col-md-2" >
+                  <div class="title-dv ">
+                     <h3>
+                        Menus
+                     </h3>
+                  </div>
+                  <ul class="catamenu">
+                     <li><a href="listing.html"><i class="bi bi-arrow-right"></i>Pizzas</a></li>
+                     <li><a href="listing.html"><i class="bi bi-arrow-right"></i>Combo</a></li>
+                     <li><a href="listing.html"><i class="bi bi-arrow-right"></i>Starters</a></li>
+                     <li><a href="listing.html"><i class="bi bi-arrow-right"></i>Main course</a></li>
+                     <li><a href="listing.html"><i class="bi bi-arrow-right"></i>Drinks (Beverages) </a></li>
+                  </ul>
+               </div>
+               <div class="col-md-3" >
+                  <div class="title-dv ">
+                     <h3>
+                        Opening Hours
+                     </h3>
+                  </div>
+                  <ul class="iconmenu">
+                     <li><i class="bi bi-clock"></i> <span>Monday – Friday: 9am – 10pmSaturday – Sunday: 10am – 11pm</span></li>
+                  </ul>
+                  <ul class="social-links">
+                     <li><a href="#"><i class="bi bi-facebook square-icon"></i></a></li>
+                     <li><a href="#"><i class="bi bi-instagram  square-icon"></i></a></li>
+                     <li><a href="#"><i class="bi bi-youtube  square-icon"></i></a></li>
+                  </ul>
+               </div>
+               <div class="col-md-3" >
+                  <div class="title-dv ">
+                     <h3>
+                        Contact Info
+                     </h3>
+                  </div>
+                  <ul class="iconmenu">
+                     <li><i class="bi bi-geo-alt"></i> <span>128 6th Ave,New York, 
+                        NY 10015 United States, 
+                        Dcca-1212</span>
+                     </li>
+                     <li><i class="bi bi-telephone"></i> <span><a href="tel:91-7262562562">+91 - 7262562562</a></span></li>
+                     <li><i class="bi bi-envelope"></i> <span><a href="mailto:info@goodfood.com">info@goodfood.com</a></span></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-md-12">
+               <p class="copyright">Copyright © Good Food 2025 All rights reserved </p>
+            </div>
+         </div>
+      </footer>
+      <script src="js/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+      
+      <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+      <script src="js/owl.carousel.js"></script>
+      <script src="js/script.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js" integrity="sha512-KFHXdr2oObHKI9w4Hv1XPKc898mE4kgYx58oqsc/JqqdLMDI4YjOLzom+EMlW8HFUd0QfjfAvxSL6sEq/a42fQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="js/validate.js"></script>
+
+      <script>
+         document.addEventListener("DOMContentLoaded", function () {
+           let multipleProducts = [];
+           let singleProduct = null;
+       
+           // Load and prioritize multiple products
+           const storedMultiple = localStorage.getItem("checkoutProducts");
+           const storedSingle = localStorage.getItem("checkoutProduct");
+       
+           if (storedMultiple && JSON.parse(storedMultiple).length > 0) {
+             multipleProducts = JSON.parse(storedMultiple);
+             // Clear old single product if multi exists
+             localStorage.removeItem("checkoutProduct");
+           } else if (storedSingle) {
+             singleProduct = JSON.parse(storedSingle);
+             // Clear old multi product if single is used
+             localStorage.removeItem("checkoutProducts");
+           }
+       
+           const priceBox = document.querySelector(".checkout-sec .col-lg-4 .box-border");
+           const priceTable = priceBox.querySelector("table tbody");
+       
+           // Remove any existing .flx-dv
+           priceBox.querySelectorAll(".flx-dv").forEach(el => el.remove());
+       
+           let total = 0;
+       
+           const createProductHTML = (product, qty = 1) => {
+             const price = parseFloat((product.price || "0").toString().replace("$", ""));
+             const quantity = parseInt(qty || 1);
+             const subtotal = price * quantity;
+             total += subtotal;
+       
+             const div = document.createElement("div");
+             div.className = "flx-dv";
+             div.innerHTML = `
+               <img src="${product.image}" alt="${product.title}">
+               <div class="prodes">
+                 ${product.title}<br>
+                 <span>${product.description || ""}</span>
+                 <small>Qty: ${quantity}</small><br>
+                 <b>$${subtotal.toFixed(2)}</b>
+               </div>
+             `;
+             return div;
+           };
+       
+           if (multipleProducts.length > 0) {
+             multipleProducts.forEach(p => {
+               priceBox.insertBefore(createProductHTML(p, p.quantity), priceTable.parentElement);
+             });
+           } else if (singleProduct) {
+            priceBox.insertBefore(createProductHTML(singleProduct, singleProduct.quantity || 1), priceTable.parentElement);
+           } else {
+             priceBox.insertAdjacentHTML("afterbegin", `<p>No product selected.</p>`);
+             return;
+           }
+       
+           // Update pricing table
+           priceTable.innerHTML = `
+             <tr><td>Sub Total</td><td>$${total.toFixed(2)}</td></tr>
+             <tr><td>Taxes and Charges</td><td>$0.00</td></tr>
+             <tr><td><b>Grand Total</b></td><td><b>$${total.toFixed(2)}</b></td></tr>
+           `;
+         });
+       </script>
+       
+       
+
+      <script>
+         updateWishlistCount();
+       </script>
+   
+   </body>
+</html>

@@ -1,0 +1,302 @@
+[
+  {
+      "id": "p1",
+      "title": "Chinese Pasta",
+      "image": "images/chowmin.png",
+      "srcset": "images/chowmin@2x.png 2x,images/chowmin@3x.png 3x",
+      "price": "$20.00",
+      "rating": 4,
+      "category": ["All Products", "Veg"],
+      "type": "dynamic",
+      "images": [
+          "images/chow3.png",
+          "images/chow2.png",
+          "images/chow4.png",
+          "images/chow3.png",
+          "images/chow2.png",
+          "images/chow4.png"
+      ],
+      "description": "Chinese Pasta is where tradition meets innovation — blending the comforting texture of noodles with rich Chinese flavors. Unlike traditional Italian pasta, Chinese pasta is often hand-pulled, knife-cut, or rolled from wheat flour, delivering a chewy, satisfying bite. Tossed in savory sauces like soy-garlic, sesame-chili, or oyster-hoisin blends, each dish brings a bold and umami-rich experience."
+  },
+  {
+      "id": "p2",
+      "title": "Chicken Shawarma",
+      "image": "images/ruti.png",
+      "srcset": "images/ruti@2x.png 2x,images/ruti@3x.png 3x",
+      "price": "$18.00",
+      "rating": 4,
+      "category": ["All Products", "Main Course"],
+      "type": "dynamic",
+      "images": [
+        "images/ruti2.png",
+        "images/ruti3.png",
+        "images/ruti4.png",
+        "images/ruti2.png"
+       
+      ],
+      "description": "Juicy, marinated slices of chicken, slow-roasted on a vertical spit and thinly shaved to order — that's the magic of authentic Chicken Shawarma. Bursting with warm spices like cumin, paprika, garlic, and a hint of cinnamon, every bite is rich, aromatic, and satisfying.Perfect for lunch, dinner, or a quick grab-and-go bite, Chicken Shawarma brings you the taste of the streets of Istanbul — no passport needed."
+  },
+  {
+      "id": "p3",
+      "title": "Combo Pack",
+      "image": "images/combo.png",
+      "srcset": "images/combo@2x.png 2x,images/combo@3x.png 3x",
+      "price": "$35.00",
+      "rating": 4,
+      "category": ["All Products", "Combo"],
+      "type": "dynamic",
+      "images": [
+          "images/combo2.png",
+          "images/combo3.png",
+          "images/combo4.png",
+          "images/combo5.png"
+      ],
+      "description": "Contents: 1 Classic Zinger Burger, 2 Hot Wings, 1 Veg Patty, and a chilled Pepsi PET. Treat yourself to the ultimate indulgence with our Combo Delight Meal, crafted for both flavor lovers and snack seekers. This satisfying combo includes a little bit of everything — spicy, crispy, hearty, and refreshing!"
+  },
+  {
+      "id": "p4",
+      "title": "Orange Mojito",
+      "image": "images/juice.png",
+      "srcset": "images/juice@2x.png 2x,images/juice@3x.png 3x",
+      "price": "$10.00",
+      "rating": 4,
+      "category": ["All Products", "Drinks"],
+      "type": "dynamic",
+      "images": [
+          "images/juice2.png",
+          "images/juice3.png",
+          "images/juice4.png",
+            "images/juice4.png"
+      ],
+      "description": "Give your taste buds a tropical twist with our Orange Mojito — a vibrant fusion of sweet citrus and cooling mint, served over ice for the ultimate refreshment. It’s a sunny spin on the classic mojito, perfect for beating the heat or brightening your day. "
+  },
+  {
+      "id": "p5",
+      "title": "Fried Chicken Burger",
+      "image": "images/burger.png",
+      "srcset": "images/burger@2x.png 2x,images/burger@3x.png 3x",
+      "price": "$25.00",
+      "rating": 4,
+      "category": ["All Products", "Burgers and Pizzas"],
+      "type": "dynamic",
+      "images": [
+          "images/fry2.png",
+          "images/fry3.png",
+          "images/fry4.png",
+           "images/fry5.png"
+      ],
+      "description": "A juicy, crispy fried chicken patty, topped with crisp lettuce, jalapeno, and a tangy sauce on a toasted bun.Sink into the savory satisfaction of our Classic Burger — simple, hearty, and absolutely delicious. Made with quality ingredients and stacked with flavor, this burger delivers the perfect balance of juicy, crispy, and creamy in every bite."
+  },
+  {
+      "id": "p6",
+      "title": "KitKat Blend",
+      "image": "images/shake.png",
+      "srcset": "images/shake@2x.png 2x,images/shake@3x.png 3x",
+      "price": "$10.00",
+      "rating": 4,
+      "category": ["All Products", "Drinks"],
+      "type": "dynamic",
+      "images": [
+          "images/shake2.png",
+          "images/shake3.png",
+          "images/shake4.png",
+          "images/shake2.png"
+      ],
+      "description": "A delightful fusion of rich coffee, creamy milk and crunchy KitKat pieces, blended with ice.Indulge in the ultimate chocolatey treat with our KitKat Blend — a rich, creamy milkshake or frappe (your choice) infused with crushed KitKat bars. It’s the perfect fusion of silky sweetness and irresistible crunch!"
+  },
+  {
+      "id": "p7",
+      "title": "Margherita Pizza",
+      "image": "images/item-piza.png",
+      "srcset": "images/item-piza@2x.png 2x,images/item-piza@3x.png 3x",
+      "price": "$12.00",
+      "rating": 4,
+      "category": ["All Products", "Burgers and Pizzas"],
+      "type": "dynamic",
+      "images": [
+          "images/pza2.png",
+          "images/pza3.png",
+          "images/pza4.png",
+          "images/pza5.png"
+      ],
+      "description": "A loaded pizza with a variety of fresh vegetables, including mushrooms, onions, peppers, olives, and jalapeno.Simple, elegant, and bursting with flavor — the Margherita Pizza is an all-time favorite that proves less is more. With its perfectly balanced ingredients and timeless appeal, every bite delivers freshness, richness, and comfort."
+  },
+  {
+      "id": "p8",
+      "title": "Chicken Quantico",
+      "image": "images/starter.png",
+      "srcset": "images/starter@2x.png 2x,images/starter@3x.png 3x",
+      "price": "$20.00",
+      "rating": 4,
+      "category": ["All Products", "Starters"],
+      "type": "dynamic",
+      "images": [
+          "images/chic2.png",
+          "images/chic3.png",
+          "images/chic4.png",
+            "images/chic2.png"
+      ],
+      "description": "Tender chicken coated in a light and crispy batter, fried to a golden brown, and tossed in your choice of sauce.Get ready to experience chicken like never before with our signature Chicken Quantico — a dish that combines intense flavor with irresistible texture. Perfectly cooked chicken is marinated in a secret blend of spices, grilled or pan-seared to juicy perfection, then coated in a bold, smoky sauce that packs a punch."
+  },
+  {
+      "id": "p9",
+      "title": "Big Bite Burger",
+      "image": "images/bigburger.png",
+      "srcset": "images/bigburger@2x.png 2x,images/bigburger@3x.png 3x",
+      "price": "$20.00",
+      "rating": 4,
+      "category": ["All Products", "Burgers and Pizzas"],
+      "type": "dynamic",
+      "images": [
+        "images/bur2.png",
+        "images/bur3.png",
+        "images/bur4.png",
+         "images/bur2.png"
+      ],
+      "description": "A classic American burger featuring two juicy patties, fried egg, crisp lettuce, jalapeno and our tangy sauce on a toasted bun.The Big Bite Burger is not just a meal — it’s an experience. Stacked high with juicy, flavorful ingredients and made to satisfy the hungriest of appetites, this burger is all about bold bites and mouthwatering layer"
+  },
+  {
+      "id": "p10",
+      "title": "Grilled Chicken",
+      "image": "images/chicken.png",
+      "srcset": "images/chicken@2x.png 2x,images/chicken@3x.png 3x",
+      "category": ["All Products", "Main Course"],
+      "price": "$20.00",
+      "type": "static",
+      "images": [
+          "images/g-chic2.png",
+          "images/g-chic3.png",
+          "images/chic4.png",
+            "images/chic2.png"
+      ],
+      "description": "Succulent grilled chicken seasoned to perfection.Our Grilled Chicken is a wholesome classic, made for those who love bold taste without the guilt. Marinated in a blend of herbs and spices, then flame-grilled to perfection, each piece is tender, juicy, and infused with smoky goodness."
+     
+  },
+  {
+      "id": "p11",
+      "title": "Mexican Chicken",
+      "image": "images/food1.png",
+      "srcset": "images/food1@2x.png 2x,images/food1@3x.png 3x",
+      "category": ["All Products", "Main Course"],
+      "price": "$40.00",
+      "type": "static",
+      "images": [
+          "images/mc-c2.png",
+         "images/mc-c3.png",
+       "images/mc-c4.png",
+         "images/mc-c2.png"
+      ],
+      "description": "Spicy Mexican style chicken with authentic flavors.Bring the bold taste of Mexico to your plate with our Mexican Chicken — a sizzling, flavor-packed dish marinated in traditional spices and cooked to juicy perfection. It’s everything you love about Mexican cuisine: colorful, spicy, and bursting with flavor."
+  },
+  {
+      "id": "p12",
+      "title": "Chicago Deep Pizza",
+      "image": "images/pizza-1.png",
+      "srcset": "images/pizza-1@2x.png 2x,images/pizza-1@3x.png 3x",
+      "category": ["All Products", "Burgers and Pizzas"],
+      "price": "$28.00",
+      "type": "static",
+      "images": [
+        "images/pza-2.png",
+       "images/pza3.png",
+     "images/pza4.png",
+       "images/pza2.png"
+    ],
+      "description": "A classic Chicago style deep dish pizza.Get ready for a serious slice of satisfaction with our Chicago Deep Dish Pizza — a true icon of indulgence. Baked in a deep, buttery crust that rises high and holds nothing back, this pizza is all about layers: thick cheese, rich sauce, and hearty toppings stacked sky-high."
+  },
+  {
+      "id": "p13",
+      "title": "King Burger",
+      "image": "images/burger2.png",
+      "srcset": "images/burger2@2x.png 2x,images/burger2@3x.png 3x",
+      "category": ["All Products", "Burgers and Pizzas"],
+      "price": "$35.00",
+      "type": "static",
+      "images": [
+        "images/bur2.png",
+        "images/bur3.png",
+        "images/bur4.png",
+         "images/bur2.png"
+      ],
+      "description": "A mighty burger fit for a king.Nothing beats the unbeatable combo of a juicy burger and crispy golden fries. Our Burger & Fries meal brings you the perfect balance of comfort, flavor, and satisfaction — made fresh, served hot, and built to hit the spot."
+  },
+  {
+      "id": "p14",
+      "title": "Chicken Ala Kiev",
+      "image": "images/ala-kiev.png",
+      "srcset": "images/ala-kiev@2x.png 2x,images/ala-kiev@3x.png 3x",
+      "category": ["All Products", "Starters"],
+      "price": "$30.00",
+      "type": "static",
+      "images": [
+        "images/kiev3.png",
+        "images/kiev2.png",
+        "images/kiev3.png",
+         "images/kiev2.png"
+      ],
+      "description": "Classic Chicken Ala Kiev, crispy and juicy.A true classic of European cuisine, Chicken à la Kiev is a refined dish known for its rich flavor and irresistible texture. A tender chicken breast is carefully rolled around a garlic-herb butter filling, then breaded and fried to a perfect golden crisp.."
+  },
+  {
+      "id": "p15",
+      "title": "Brownie Shake",
+      "image": "images/brownie.png",
+      "srcset": "images/brownie@2x.png 2x,images/brownie@3x.png 3x",
+      "category": ["All Products", "Drinks"],
+      "price": "$20.00",
+      "type": "static",
+      "images": [
+        "images/shake4.png",
+        "images/shake2.png",
+        "images/shake3.png",
+        "images/shake4.png"
+      ],
+      "description": "Rich and creamy brownie flavored shake.Indulgence reaches new heights with our Brownie Shake — a thick, creamy blend of fudgy chocolate brownies, velvety ice cream, and rich milk chocolate. It’s part drink, part dessert, and 100% delicious."
+  },
+  {
+      "id": "p16",
+      "title": "Chicken Stroganoff",
+      "image": "images/stroganoff.png",
+      "category": ["All Products", "Main Course"],
+      "price": "$45.00",
+      "type": "static",
+      "images": [
+        "images/chc-st1.png",
+        "images/chc-st2.png",
+        "images/chc-st3.png",
+         "images/chc-st1.png"
+      ],
+      "description": "Creamy chicken stroganoff with tender chicken pieces.Indulge in the rich, comforting flavors of Chicken Stroganoff — a timeless dish that combines tender chicken with a luscious, creamy mushroom sauce. Inspired by the classic Russian recipe, this version offers a lighter take with all the flavor you crave."
+  },
+  {
+      "id": "p17",
+      "title": "Alfredo Pasta",
+      "image": "images/pasta.png",
+      "srcset": "images/pasta@2x.png 2x,images/pasta@3x.png 3x",
+      "category": ["All Products", "Veg"],
+      "price": "$28.00",
+      "type": "static",
+      "images": [
+        "images/pasta2.png",
+        "images/pasta3.png",
+        "images/pasta4.png",
+      "images/pasta3.png"
+      ],
+      "description": "Classic Alfredo pasta, rich and savory.Dive into a bowl of pure comfort with our Alfredo Pasta — a classic Italian favorite made with a silky, buttery cream sauce and perfectly cooked pasta. It’s smooth, savory, and satisfying in every forkful."
+  },
+  {
+      "id": "p18",
+      "title": "Fish and Chips",
+      "image": "images/cutlet.png",
+      "srcset": "images/cutlet@2x.png 2x,images/cutlet@3x.png 3x",
+      "category": ["All Products", "Starters"],
+      "price": "$28.00",
+      "type": "static",
+      "images": [
+        "images/fish2.png",
+        "images/fish3.png",
+        "images/fish1.png",
+         "images/fish2.png"
+      ],
+      "description": "Crispy fish and chips, a timeless classic.Nothing beats the golden crunch of our Fish and Chips — a beloved favorite that brings comfort, flavor, and nostalgia in every bite. Lightly battered, perfectly fried, and served hot with crispy fries, this dish is a timeless crowd-pleaser."
+  }
+]
